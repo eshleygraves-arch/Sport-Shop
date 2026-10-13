@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша Корзина — Оформление</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Sport<span>Express</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="pokupki.html" class="nav-link">Покупки</a></li>
+                <li><a href="predmety.html" class="nav-link">Предметы</a></li>
+                <li><a href="korzina.html" class="nav-link active">Корзина</a></li>
+                <li><a href="support.html" class="nav-link">Тех-Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Ваш выбор для экономии времени</h2>
+        
+        <div class="cart-container">
+            <!-- Товар 1 -->
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <img src="https://urbanpitch.com" alt="Форма" class="cart-item-img">
+                    <div>
+                        <h4>Профессиональная форма футболиста</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Размер: L</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="price">4 500 ₽</span>
+                    <!-- Ссылка ведет на саму себя, чтобы не было 404 при демонстрации отмены -->
+                    <a href="korzina.html" class="btn btn-danger" title="Отменить покупку">Отменить</a>
+                </div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <img src="https://shutterstock.com" alt="Мяч" class="cart-item-img">
+                    <div>
+                        <h4>Футбольный мяч FIFA Quality</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Снаряд</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="price">2 900 ₽</span>
+                    <a href="korzina.html" class="btn btn-danger" title="Отменить покупку">Отменить</a>
+                </div>
+            </div>
+
+            <!-- Итоги -->
+            <div class="cart-summary">
+                <p style="font-size: 1rem; color: var(--text-muted);">Вы экономите около 3 часов на поездку в магазин!</p>
+                <p>Итого к оплате: <span class="highlight">7 400 ₽</span></p>
+                <a href="korzina.html" class="btn" style="margin-top: 1rem; width: 100%;">Оформить быструю доставку</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SportExpress. Demo Day Project. Заказ сформирован за секунды.</p>
+    </footer>
+
+</body>
+</html>

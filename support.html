@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тех-Поддержка — Помощь пользователям</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Sport<span>Express</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="pokupki.html" class="nav-link">Покупки</a></li>
+                <li><a href="predmety.html" class="nav-link">Предметы</a></li>
+                <li><a href="korzina.html" class="nav-link">Корзина</a></li>
+                <li><a href="support.html" class="nav-link active">Тех-Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="support-container">
+            <h2 style="margin-bottom: 0.5rem; text-align: center;">Возникли проблемы с сайтом?</h2>
+            <p style="color: var(--text-muted); text-align: center; margin-bottom: 2rem;">Напишите нам, мы ценим ваше время и ответим в течение пары минут!</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" class="form-control" placeholder="Иван" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Опишите проблему</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="Не могу выбрать размер или не нажимается кнопка..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Отправить запрос в поддержку</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SportExpress. Demo Day Project. Поддержка пользователей 24/7.</p>
+    </footer>
+
+</body>
+</html>
